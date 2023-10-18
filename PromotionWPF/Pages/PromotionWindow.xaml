@@ -6,7 +6,19 @@
         xmlns:local="clr-namespace:PromotionWPF.Pages"
         mc:Ignorable="d"
         Title="PromotionWindow" Height="450" Width="800">
+    
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        <DataGrid x:Name="promotionDataGrid" Grid.Row="0"/>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Button Style="{StaticResource MainButtonTheme}" Content="Add" x:Name="addButton"/>
+            <Button Style="{StaticResource MainButtonTheme}" Content="delete" x:Name="deleteButton"/>
+            <Button Style="{StaticResource MainButtonTheme}" Content="show" x:Name="showButton"/>
+        </StackPanel>
+       
     </Grid>
 </Window>

@@ -35,6 +35,7 @@ namespace PromotionWPF
         private void OpenPromotionsButton_Click(object sender, RoutedEventArgs e)
         {
             var fm = new PromotionWindow();
+            Close();
             fm.ShowDialog();
         }
     }
